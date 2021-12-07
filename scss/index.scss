@@ -1,0 +1,48 @@
+@import 'variables';
+
+.gradient {
+    background-image: url(../images/Symbol.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top;
+    background-size: auto 100vh, auto;
+    padding-bottom: 60px;
+    border-radius: 0px 0px 12px 12px;
+}
+.viewport {
+
+    // .viewport__height
+
+    &__height {
+        min-height: 100vh;
+    }
+}
+.viewport {
+    display: flex;
+    flex-direction: column;
+    // .viewport__title
+
+    &__title {
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        margin-top: auto;
+        padding: 0 10px;
+    }
+}
+.next-page {
+
+    // .next-page__scrol
+
+    &__scrol {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-top: auto;
+    }
+}
+.next-page__scrol:hover .viewport__icon-scrol {
+    stroke: $accent;
+    cursor: pointer;
+}
