@@ -1,4 +1,5 @@
 .slider {
+    margin-bottom: 60px;
 
     // .slider__list
 
@@ -122,5 +123,10 @@
     .slider__title {
         font-size: 30px;
         line-height: 37px;
+    }
+    .slider__img{
+        min-width: 315px;
+        overflow: hidden;
+        height: 500px;
     }
 }

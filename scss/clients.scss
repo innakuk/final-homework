@@ -1,0 +1,104 @@
+.clients {
+
+    // .clients_nopadding
+
+    &_nopadding {
+        margin-left: -60px;
+        margin-right: -60px;
+        margin-bottom: 60px;
+    }
+
+    // .clients__title
+
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $dark-blue;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    // .clients__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    // .clients__link
+
+    &__link {
+        display: flex;
+        height: 120px;
+    }
+
+    // .clients__logo
+
+    &__logo {
+        margin: auto;
+    }
+}
+
+.hillel-logo {
+    background: #1C4280;
+    border-radius: 12px 0 0 0;
+}
+.wannabiz-logo {
+    background: #143646;
+}
+.tapgerine-logo {
+    background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+.look3d-logo {
+    background: #9E4DC3;
+    border-radius: 0 12px 0 0;
+}
+.orangear-logo {
+    background: #FD9339;
+}
+.adtelligent-logo {
+    background: #E2E2E4;
+}
+.clickky-logo {
+    background: #C71C36;
+}
+.ecolease-logo {
+    background: #DCF3F9;
+}
+.infratek-logo {
+    background: #EAEAEA;
+    border-radius: 0 0  0 12px;
+}
+.citypark-logo {
+    background: #282240;
+}
+.artprintstudio-logo {
+    background: #1D4568;
+}
+.ultimatecard-logo {
+    background: #000000;
+    border-radius: 0 0 12px 0;
+}
+@media (max-width: 1919px) {
+    .clients__item {
+        border-radius: 0;
+    } 
+}
+@media (max-width: 1023px) {
+    .clients__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .clients_nopadding {
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-bottom: 30px;
+    }
+    .clients__list {
+        grid-template-columns: 1fr;
+    }
+}
