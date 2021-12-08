@@ -1,0 +1,126 @@
+.slider {
+
+    // .slider__list
+
+    &__list {
+        background-color: $grey;
+        border-radius: 12px;
+    }
+
+    // .slider__item
+
+    &__item {
+        display: grid !important;
+        grid-template-columns: 400px 1fr;
+    }
+
+    // .slider__img
+
+    &__img {
+        width: 400px;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    &__photo {
+        width: 410px;
+        height: 100%;
+    }
+
+    // .slider__content
+
+    &__content {
+        padding: 30px;
+    }
+
+    // .slider__title
+
+    &__title {
+        padding-top: 5px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: $gradient-redtext;
+    }
+
+    // .slider__text
+
+    &__text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: $grey-text;
+    }
+}
+
+.slider {
+
+    // .sider__subtitle
+
+    &__subtitle {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey-text;
+    }
+
+    &__partner-link {
+        text-decoration: none;
+    }
+}
+
+.slider__dots{
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.slider__dots li{
+    margin-right: 15px;
+}
+
+.slider__dots button{
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: $blue;
+    background-color: $blue;
+    border: 0;
+}
+
+.slider__dots li.slick-active button {
+    background-color: $blue-active;
+}
+
+.slick-list {
+    border-radius: 12px;
+}
+
+@media (max-width: 1023px) {
+    .slider__item {
+        grid-template-columns: 1fr;
+        
+    }
+    .slider__img {
+        width: 100%;
+        overflow: hidden;
+        height: 500px;
+    }
+
+    .slider__photo {
+        width: 100%;
+        height: 510px;
+    }
+}
+
+@media (max-width: 648px) {
+    .slider__title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
