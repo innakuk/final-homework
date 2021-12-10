@@ -1,3 +1,13 @@
+.gradient__services{
+    background-image: $gradients-supersoft;
+    border-radius: 0px 0px 12px 12px;
+}
+.services__container-page {
+    padding: 60px 0;
+}
+.footer__container--border {
+    border-top: 0;
+}
 .services {
 
     // .services__title
@@ -6,9 +16,9 @@
         font-weight: bold;
         font-size: 38px;
         line-height: 46px;
-        color: transparent;
-        -webkit-background-clip: text;
         background-image: $gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         margin-bottom: 60px;
         vertical-align: top;
     }

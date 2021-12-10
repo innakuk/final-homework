@@ -4,12 +4,15 @@
     // .footer__container
 
     &__container {
-        border-top: 2px solid $grey-separator;
         padding: 30px 0;
         display: grid;
         grid-template-areas: 
         "footer-address copyright"
         "footer-contacts footer-contacts";
+    }
+
+    &__container--border {
+        border-top: 2px solid $grey-separator;
     }
 
     // .footer__on-map

@@ -9,14 +9,6 @@
         padding-top: 0;
     }
 }
-
-.pages {
-
-    // .pages__container
-
-    &__container {
-    }
-}
 .about {
 
     // .about__info
@@ -34,9 +26,9 @@
         font-weight: bold;
         font-size: 38px;
         line-height: 46px;
-        color: transparent;
-        -webkit-background-clip: text;
         background-image: $gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         
     }
 
@@ -94,12 +86,6 @@
         color: $dark-blue;
     }
 }
-.about-page {
-
-}
-
-
-
 .background {
 
     // .background__img-team

@@ -1,0 +1,111 @@
+.services-desc {
+
+
+    // .services-desc__title
+
+    &__title {
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        background-image: $gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 28px;
+    }
+
+    // .services-desc__text
+
+    &__text {
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 28px;
+    }
+
+    // .services-desc__info
+
+    &__info {
+        padding-bottom: 60px;
+        padding-top: 30px;
+        border-top: 4px solid $grey-separator;
+    }
+
+    // .services-desc__subtitle
+
+    &__subtitle {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    // .services-desc__list
+
+    &__list {
+        display: inline-block;
+        column-count: 2;
+        column-gap: 60px;
+        
+    }
+
+    // .services-desc__item
+
+    &__item {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        padding-left: 14px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $accent;
+            display: block;
+            position: absolute;
+            top: 9px;
+            left: 0;
+        }
+    }
+    // .services-desc__wrap
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0;
+    }
+}
+
+.services-desc__container {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-submit {
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    padding: 18px  30px;
+    border: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+    .services-desc__list {
+        column-count: 1;
+        column-gap: 0px;
+    }
+}

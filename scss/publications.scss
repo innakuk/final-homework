@@ -14,9 +14,9 @@
         font-weight: bold;
         font-size: 38px;
         line-height: 46px;
-        color: transparent;
+        background-image: $gradient-redtext;
         -webkit-background-clip: text;
-        background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-text-fill-color: transparent;
         margin-bottom: 30px;
     }
 
