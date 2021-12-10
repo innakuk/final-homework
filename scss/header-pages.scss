@@ -1,0 +1,82 @@
+
+.header {
+
+    // .header__container--pages
+
+    &__container--pages {
+        padding: 50px 0 0 0;
+    }
+
+    // .header__logo--about
+
+    &__logo--about {
+        display: flex;
+        &::after {
+            content: 'about us';
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 44px;
+            color: $dark-blue;
+            white-space: nowrap;
+        }
+    }
+
+}
+.button__hamburger--pages {
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    height: 32px;
+    background: #FFFFFF;
+
+
+    &:hover {
+        background-color: $grey-separator;
+    }
+}
+
+.main-info {
+
+    // .main-info__item--pages
+
+    &__item--pages {
+        &:hover {
+            background-color: $grey;
+        }
+        &:active {
+            background-color: $accent;
+        }
+    }
+
+    // .main-info__lang--pages
+
+    &__lang--pages, &__adress--pages, &__phone--pages {
+        color: $grey-text;
+    }
+}
+
+.menu {
+
+    // .menu__link--pages
+
+    &__link--pages {
+        color: $blue;
+    }
+}
+
+@media(max-width: 767px) {
+    .header__top--pages {
+        margin: 0 -10px;
+        padding: 12.5px 10px;
+        background-color: $grey;
+    }
+
+    .header__logo--about::after {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header__container--pages {
+        padding: 0;
+    }
+}

@@ -74,7 +74,7 @@
     }
 }
 
-.slider__dots{
+.slider__dots {
     display: flex;
     padding-top: 30px;
     justify-content: center;
@@ -85,7 +85,7 @@
     margin-right: 15px;
 }
 
-.slider__dots button{
+.slider__dots button {
     font-size: 0;
     width: 16px;
     height: 16px;
@@ -102,6 +102,42 @@
 .slick-list {
     border-radius: 12px;
 }
+
+
+.achievement-slider {
+
+    // .achievement-slider__list
+
+    &__list {
+        display: flex; 
+    }
+
+    // .achievement-slider__item
+
+    &__item {
+        height: 190px;
+        width: 100%;
+        background-color: #fff;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    // .achievement-slider__img
+
+    &__img {
+
+    }
+}
+.slick-list--achievement {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.slick-slide--achievement {
+    margin: 0 40px;
+}
+
 
 @media (max-width: 1023px) {
     .slider__item {
