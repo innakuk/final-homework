@@ -9,7 +9,7 @@
 
     // .header__logo--about
 
-    &__logo--about {
+    &__logo--about, &__logo--services, &__logo--team {
         display: flex;
         &::after {
             content: 'about us';
@@ -20,7 +20,17 @@
             white-space: nowrap;
         }
     }
-
+    &__logo--services {
+        &::after {
+            content: 'services';
+            color: #FFFFFF;
+        }
+    }
+    &__logo--team {
+        &::after {
+            content: 'team';
+        }
+    }
 }
 .button__hamburger--pages {
     padding: 0;
@@ -71,11 +81,14 @@
         background-color: $grey;
     }
 
-    .header__logo--about::after {
-        font-size: 20px;
-        line-height: 24px;
+    .header__logo {
+        &--about, &--services, &--team {
+            &::after {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
     }
-
     .header__container--pages {
         padding: 0;
     }

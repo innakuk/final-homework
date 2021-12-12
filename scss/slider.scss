@@ -19,12 +19,11 @@
 
     &__img {
         width: 400px;
-        overflow: hidden;
-        height: 100%;
+        height: 298px;
     }
 
     &__photo {
-        width: 410px;
+        width: 100%;
         height: 100%;
     }
 
@@ -81,11 +80,13 @@
     background-color: #fff;
 }
 
-.slider__dots li{
-    margin-right: 15px;
+.slider__dots li, .ach-slider__dots li{
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
 }
 
-.slider__dots button {
+.slider__dots button, .ach-slider__dots button {
     font-size: 0;
     width: 16px;
     height: 16px;
@@ -95,7 +96,7 @@
     border: 0;
 }
 
-.slider__dots li.slick-active button {
+.slider__dots li.slick-active button, .ach-slider__dots li.slick-active button{
     background-color: $blue-active;
 }
 
@@ -115,34 +116,58 @@
     // .achievement-slider__item
 
     &__item {
-        height: 190px;
-        width: 100%;
+        height: 110px;
+        max-width: 370px;
         background-color: #fff;
         display: flex !important;
         justify-content: center;
         align-items: center;
-        
+        margin-right: 40px;
+        border-radius: 12px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     // .achievement-slider__img
 
     &__img {
-
+        max-width: 100%;
     }
 }
-.slick-list--achievement {
-    margin-left: -40px;
-    margin-right: -40px;
-}
-.slick-slide--achievement {
-    margin: 0 40px;
+.ach-slider__dots {
+    position: absolute;
+    top: 140px;
+    display: flex;
+    left: 50%;
 }
 
+@media (max-width: 1919px) {
+    .slider__img {
+        height: 344px;
+    }
+
+    .achievement-slider__item {
+        max-width: 330px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .slider__img {
+        height: 528px;
+    }
+    .achievement-slider__item {
+        max-width: 260px;
+    }
+}
 
 @media (max-width: 1023px) {
     .slider__item {
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;    
+    }
+    .slider__img {
+        height: 500px;
     }
     .slider__img {
         width: 100%;
@@ -154,9 +179,13 @@
         width: 100%;
         height: 510px;
     }
+
+    .achievement-slider__item {
+        max-width: 170px;
+    }
 }
 
-@media (max-width: 648px) {
+@media (max-width: 767px) {
     .slider__title {
         font-size: 30px;
         line-height: 37px;

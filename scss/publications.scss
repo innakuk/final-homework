@@ -33,7 +33,7 @@
 
     &_img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     // .publications__item
@@ -84,6 +84,10 @@
     &__desc {
         padding: 30px;
     }
+}
+.publications__img-wrap {
+    width: auto;
+    height: 200px;
 }
 @media (max-width: 1023px){
     .publications__wrapper {

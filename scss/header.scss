@@ -62,10 +62,6 @@
         background: rgba(255, 255, 255, 0.2);
         border-radius: 8px;
     }
-    &__item:active {
-        background: $accent;
-        border-radius: 8px;    
-    }
 
     &__item:last-child {
         margin-right: 0px;
