@@ -9,7 +9,7 @@
 
     // .header__logo--about
 
-    &__logo--about, &__logo--services, &__logo--team {
+    &__logo--about, &__logo--services, &__logo--team, &__logo--contact {
         display: flex;
         &::after {
             content: 'about us';
@@ -29,6 +29,11 @@
     &__logo--team {
         &::after {
             content: 'team';
+        }
+    }
+    &__logo--contact {
+        &::after {
+            content: 'contact';
         }
     }
 }
@@ -82,7 +87,7 @@
     }
 
     .header__logo {
-        &--about, &--services, &--team {
+        &--about, &--services, &--team, &--contact {
             &::after {
                 font-size: 20px;
                 line-height: 24px;

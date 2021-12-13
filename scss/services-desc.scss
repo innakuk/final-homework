@@ -101,6 +101,18 @@
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    font-family: inherit;
+
+    &:hover {
+        cursor: pointer;
+        background: #0085FF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    }
+
+    &:active {
+        background: #006CCF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    }
 }
 
 @media (max-width: 767px) {
