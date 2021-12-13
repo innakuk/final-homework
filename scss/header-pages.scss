@@ -9,7 +9,7 @@
 
     // .header__logo--about
 
-    &__logo--about, &__logo--services, &__logo--team, &__logo--contact {
+    &__logo--about, &__logo--services, &__logo--team, &__logo--contact, &__logo--publications {
         display: flex;
         &::after {
             content: 'about us';
@@ -34,6 +34,11 @@
     &__logo--contact {
         &::after {
             content: 'contact';
+        }
+    }
+    &__logo--publications {
+        &::after {
+            content: 'publications';
         }
     }
 }
@@ -87,7 +92,7 @@
     }
 
     .header__logo {
-        &--about, &--services, &--team, &--contact {
+        &--about, &--services, &--team, &--contact, &--publications {
             &::after {
                 font-size: 20px;
                 line-height: 24px;

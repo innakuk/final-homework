@@ -5,7 +5,7 @@
     // .publications__caption-wrap
 
     &__caption-wrap {
-        padding: 30px 0;
+        padding: 30px 0 0 0;
     }
 
     // .publications__title
@@ -38,9 +38,10 @@
 
     // .publications__item
 
-    &__item {
+    &__item, &__item-page {
         background-color: #fff;
         border-radius: 8px;
+        overflow: hidden;
     }
 
     // .publications__item-title
@@ -57,6 +58,10 @@
     &__item-link {
         text-decoration: none;
         color: $blue;
+
+        &:hover {
+            color: $accent;
+        }
     }
 
     // .publications__item-date
@@ -85,10 +90,88 @@
         padding: 30px;
     }
 }
+
 .publications__img-wrap {
     width: auto;
     height: 200px;
 }
+
+.main {
+
+    // .main__publications
+
+    &__publications {
+        background-color: $grey;
+        
+    }
+}
+.header--padding {
+    margin-bottom: 60px;
+}
+.publications__container-main{
+    padding: 30px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pages-buttons {
+
+    // .pages-buttons__wrap
+
+    &__wrap {
+        height: 42px;
+        background-color: $grey-separator;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 2px;
+    }
+}
+.page-button {
+
+    // .page-button__news
+
+    &__news, &__articles {
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 8px 30px 10px 30px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: $dark-blue;
+        border: none;
+    }
+
+    // .page-button__articles
+
+    &__articles {
+        background-color: $grey-separator;
+
+        &:hover {
+            background-color: $grey;
+        }
+    }
+}
+.publications-page {
+
+    // .publications-page__wrap
+
+    &__wrap {
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+.publications {
+    // .publications__item
+
+    &__item {
+        border-radius: 8px;
+    }
+}
+
 @media (max-width: 1023px){
     .publications__wrapper {
         grid-template-columns: repeat(2, 1fr);
@@ -96,7 +179,10 @@
     .publications__item:last-child{
         grid-column-start: 1;
         grid-column-end: 3;
-        margin-bottom: 30px;
+        
+    }
+    .publications-page__wrap {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -106,7 +192,9 @@
     }
     .publications__item:last-child{
         grid-column-start: 1;
-        grid-column-end: 2;
-        
+        grid-column-end: 2;    
+    }
+    .publications-page__wrap {
+        grid-template-columns: 1fr;
     }
 }

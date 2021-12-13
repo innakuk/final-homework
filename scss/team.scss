@@ -52,7 +52,7 @@
             stroke: $accent;
         }
 
-        &:hover .employee__name {
+        &:hover .employee__name-main {
             color: $accent;
         }
     }
@@ -65,7 +65,7 @@
 
     // .employee__name
 
-    &__name {
+    &__name-main {
         font-weight: bold;
         font-size: 16px;
         line-height: 20px;
